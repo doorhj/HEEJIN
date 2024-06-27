@@ -669,9 +669,9 @@ li .probtn span {
 
 /* projects end */
 
-/* contect start */
+/* contact start */
 
-#contect {
+#contact {
     width: 1440px;
     height: 1124px;
 }
@@ -757,7 +757,7 @@ fieldset {
     height: 50px;
 }
 
-.contectbtn {
+.contactbtn {
     margin-top: 20px;
     float: right;
     width: 150px;
@@ -772,7 +772,7 @@ fieldset {
     transition: all 0.7s, color 0.3s;
 }
 
-.contectbtn:hover {
+.contactbtn:hover {
     color: #010102;
     box-shadow: 200px 0 0 0 rgba(245, 247, 248, 5) inset;
 }
@@ -800,7 +800,7 @@ fieldset {
     object-position: center;
 }
 
-/* contect end */
+/* contact end */
 
 /* 푸터 */
 footer {
