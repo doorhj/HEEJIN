@@ -853,15 +853,12 @@ footer {
     margin: 0 auto;
     border-radius: 10px;
     overflow: hidden;
-
-    background-color: #B4AEE8;
 }
 
 .modalimg img {
     position: absolute;
     width: 100%;
     object-fit: cover;
-    margin-top: -25px;
     transform: scale(var(--zoom, 1));
     transform-origin: var(--x) var(--y);
     transition: transform 0.3s ease;
