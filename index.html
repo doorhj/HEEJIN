@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.75, maximum-scale=1">
+    <title>웹 포트폴리오: 문희진</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="icon" href="images/logo.png">
+
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="js/gsap.min.js"></script>
+    <script src="js/ScrollTrigger.min.js"></script>
+    <script src="js/jquery.marquee.min.js"></script>
+    <script src="js/circle-progress.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/script.js"></script>
+</head>
+
+<body>
+    <script> 
+        AOS.init(); 
+    </script>
+    <script data-cfasync="false" type="text/javascript" src="js/form-submission-handler.js"></script>
+
+    <div class="wrap">
+        <header>
+            <div class="logo mouse">
+                <a href="intro"><img src="images/logo.svg" alt="logo1"></a>
+            </div>
+            <nav class="menu">
+                <ul class="main white black">
+                    <li class="mouse"><a href="#about">About</a></li>
+                    <li class="mouse"><a href="#skills">Skills</a></li>
+                    <li class="mouse"><a href="#projects">Projects</a></li>
+                    <li class="mouse"><a href="#contect">Contect</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section>
+            <!-- intro start -->
+            <div class="intro" id="intro">
+                <span class="pr"></span>
+
+                <!-- 스크롤 유도 애니메이션 -->
+                <div class="scroll">
+                    <div class="scrollarrow">
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+            <!-- intro end -->
+
+
+            <!-- about start -->
+            <div class="con" id="about">
+                <div class="aboutwrap" data-aos="fade-up"
+                data-aos-duration="2000">
+                    <div class="title">
+                        <span>ABOUT</span>
+                    </div>
+                    <div class="subtitle">
+                        <span>모든 색의, 모든 빛의 집합.</span>
+                        <br>
+                        <span>보다 생각을 다채롭게 하다.</span>
+                    </div>
+                </div>
+                <div class="aboutvd">
+                    <video src="images/about_video.mp4" autoplay muted loop></video>
+                </div>
+
+                <div class="abouttext" data-aos="fade-up"
+                data-aos-duration="2000">
+                    <div class="name">
+                        <h2>문희진</h2>
+                        <p>2001.01.05</p>
+                        <p>mheezin@gmail.com</p>
+                    </div>
+                    <div class="edu">
+                        <h2>Education</h2>
+                        <p>UIUX 웹디자인&웹퍼블리싱 실무자 양성과정 수료</p>
+                        <p>조선대학교 신문방송학과 졸업</p>
+                    </div>
+                </div>
+
+                <div class="banner mouse" data-aos="fade-up"
+                data-aos-duration="2000">
+                    <span>SIMPLE THING-</span>
+                    <span>SPECIAL THINK</span>
+                    <span>SIMPLE THING-</span>
+                    <span>SPECIAL THINK</span>
+                    <span>SIMPLE THING-</span>
+                    <span>SPECIAL THINK</span>
+                </div>
+            </div>
+            <!-- about end -->
+
+            <!-- skills start -->
+            <div class="con" id="skills">
+                <div class="title" data-aos="fade-up"
+                data-aos-duration="2000">
+                    <span>Skills</span>
+                </div>
+
+                <div class="circlewrap"data-aos="fade-up"
+                data-aos-duration="2000">
+                    <div class="circle" id="circle1">
+                        <div class="stack">
+                            <img src="images/HTML.svg" alt="html">
+                        </div>
+                        <div class="caption mouse"><span>75%</span></div>
+                        <div class="caption2">Html5</div>
+                    </div>
+                    <div class="circle" id="circle2">
+                        <div class="stack">
+                            <img src="images/CSS.svg" alt="css">
+                        </div>
+                        <div class="caption mouse"><span>75%</span></div>
+                        <div class="caption2">CSS3</div>
+                    </div>
+                    <div class="circle" id="circle3">
+                        <div class="stack">
+                            <img src="images/JavaScript.svg" alt="js">
+                        </div>
+                        <div class="caption mouse"><span>60%</span></div>
+                        <div class="caption2">JavaScript</div>
+                    </div>
+                    <div class="circle" id="circle4">
+                        <div class="stack">
+                            <img src="images/jquery-vertical.svg" alt="jquery">
+                        </div>
+                        <div class="caption mouse"><span>60%</span></div>
+                        <div class="caption2">JQuery</div>
+                    </div>
+                </div>
+
+                <div class="title" id="Tools" data-aos="fade-up"
+                data-aos-duration="2000">
+                    <span>Tools</span>
+                </div>
+                <div class="circlewrap" id="circlewrap2" data-aos="fade-up"
+                data-aos-duration="2000">
+                    <div class="circle" id="circle5">
+                        <div class="stack">
+                            <img src="images/VSCode-Dark.svg" alt="html">
+                        </div>
+                        <div class="caption mouse"><span>80%</span></div>
+                        <div class="caption2">VScode</div>
+                    </div>
+                    <div class="circle" id="circle6">
+                        <div class="stack">
+                            <img src="images/Figma-Dark.svg" alt="css">
+                        </div>
+                        <div class="caption mouse"><span>80%</span></div>
+                        <div class="caption2">Figma</div>
+                    </div>
+                    <div class="circle" id="circle7">
+                        <div class="stack">
+                            <img src="images/Photoshop.svg" alt="js">
+                        </div>
+                        <div class="caption mouse"><span>90%</span></div>
+                        <div class="caption2">Photoshop</div>
+                    </div>
+                    <div class="circle" id="circle8">
+                        <div class="stack">
+                            <img src="images/Illustrator.svg" alt="jquery">
+                        </div>
+                        <div class="caption mouse"><span>60%</span></div>
+                        <div class="caption2">Illustrator</div>
+                    </div>
+                </div>
+            </div>
+            <!-- skills end -->
+
+            <!-- projects start -->
+            <div class="con" id="projects">
+                <div class="title" data-aos="fade-up"
+                data-aos-duration="2000">
+                    <span>Publishing</span>
+                </div>
+
+                <ul data-aos="fade-up"
+                data-aos-duration="2000">
+                    <li>
+                        <button class="probtn mouse" onclick="window.open('https://doorhj.github.io/memohj/')">게시판형 메모장<span>#HTML5 #CSS3 #JavaScript</span></button>
+                        <div id="pro1" class="procon">
+                            <div class="proimg glow mouse">
+                                <img src="images/pro1.jpg" alt="pro1">
+                                <div class="detail">
+                                    <div class="decon">
+                                        <h2>기한</h2>
+                                        <p>2024.03.19 - 2024.03.19</p>
+                                    </div>
+                                    <div class="decon">
+                                        <h2>담당 역할</h2>
+                                        <p>디자인 · 퍼블리싱</p>
+                                    </div>
+                                    <div class="decon">
+                                        <h2>기여도</h2>
+                                        <p>100%</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="probtn2 mouse" onclick="window.open('https://doorhj.github.io/memohj/')">DEMO →</button>
+                        </div>
+                    </li>
+                    <li>
+                        <button id="pro2btn" class="probtn mouse" onclick="window.open('https://doorhj.github.io/doorwater/')">제주 삼다수 클론코딩<span>#HTML5 #CSS3 #JavaScript</span></button>
+                        <div id="pro2" class="procon">
+                            <div class="proimg mouse">
+                                <img src="images/pro2.jpg" alt="pro2">
+                                <div class="detail">
+                                    <div class="decon">
+                                        <h2>기한</h2>
+                                        <p>2024.03.22 - 2024.03.28</p>
+                                    </div>
+                                    <div class="decon">
+                                        <h2>담당 역할</h2>
+                                        <p>퍼블리싱</p>
+                                    </div>
+                                    <div class="decon">
+                                        <h2>기여도</h2>
+                                        <p>100%</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="probtn2 mouse" onclick="window.open('https://doorhj.github.io/doorwater/')">DEMO →</button>
+                        </div>
+                    </li>
+                    <li>
+                        <button id="pro3btn" class="probtn mouse" onclick="window.open('https://doorhj.github.io/hjwatcha/')">왓챠 리디자인<span>#HTML5 #CSS3 #JavaScript</span></button>
+                        <div id="pro3" class="procon">
+                            <div class="proimg mouse">
+                                <img src="images/pro3.jpg" alt="pro3">
+                                <div class="detail">
+                                    <div class="decon">
+                                        <h2>기한</h2>
+                                        <p>2024.05.22 - 2024.06.04</p>
+                                    </div>
+                                    <div class="decon">
+                                        <h2>담당 역할</h2>
+                                        <p>디자인 · 퍼블리싱</p>
+                                    </div>
+                                    <div class="decon">
+                                        <h2>기여도</h2>
+                                        <p>100%</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="probtn2 mouse" onclick="window.open('https://doorhj.github.io/hjwatcha/')">DEMO →</button>
+                        </div>
+                    </li>
+                    <li>
+                        <button class="probtn mouse" onclick="window.open('https://doorhj.github.io/HEEJIN/')">포트폴리오 웹사이트<span>#HTML5 #CSS3 #JavaScript</span></button>
+                        <div id="pro1" class="procon">
+                            <div class="proimg mouse">
+                                <img src="images/pro4.jpg" alt="pro4">
+                                <div class="detail">
+                                    <div class="decon">
+                                        <h2>기한</h2>
+                                        <p>2024.06.13 - 2024.06.27</p>
+                                    </div>
+                                    <div class="decon">
+                                        <h2>담당 역할</h2>
+                                        <p>디자인 · 퍼블리싱</p>
+                                    </div>
+                                    <div class="decon">
+                                        <h2>기여도</h2>
+                                        <p>100%</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="probtn2 mouse" onclick="window.open('https://doorhj.github.io/HEEJIN/')">DEMO →</button>
+                        </div>
+                    </li>
+                </ul>
+
+                <div class="provd">
+                    <video src="images/pro1vd.mp4" autoplay muted loop></video>
+                </div>
+            </div>
+            <!-- projects end -->
+
+            <!-- projects2 start -->
+            <div class="con" id="projects2">
+                <div class="title" data-aos="fade-up"
+                data-aos-duration="2000">
+                    <span>Design</span>
+                </div>
+
+                <ul data-aos="fade-up"
+                data-aos-duration="2000">
+                    <li>
+                        <button id="pro2btn" class="probtn mouse" onclick="window.open('https://www.figma.com/design/xG3NpCGFs00NNLWpqnCFk3/%EB%B9%84%EB%AA%A8-%EC%95%B1-%EA%B8%B0%ED%9A%8D%2F%EB%94%94%EC%9E%90%EC%9D%B8?node-id=151-395')">비모 앱 디자인<span>#Figma #Illustrator #Photoshop</span></button>
+                        <div id="pro2" class="procon">
+                            <div class="proimg mouse">
+                                <img src="images/pro5.jpg" alt="pro5">
+                                <div class="detail">
+                                    <div class="decon">
+                                        <h2>기한</h2>
+                                        <p>2024.04.18 - 2024.05.08</p>
+                                    </div>
+                                    <div class="decon">
+                                        <h2>담당 역할</h2>
+                                        <p>디자인</p>
+                                    </div>
+                                    <div class="decon">
+                                        <h2>기여도</h2>
+                                        <p>100%</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="probtn2 mouse" onclick="window.open('https://www.figma.com/design/xG3NpCGFs00NNLWpqnCFk3/%EB%B9%84%EB%AA%A8-%EC%95%B1-%EA%B8%B0%ED%9A%8D%2F%EB%94%94%EC%9E%90%EC%9D%B8?node-id=151-395')">Figma →</button>
+                        </div>
+                    </li>
+                    <li>
+                        <button id="pro3btn" class="probtn mouse modalopen">Sea Of Love 앨범아트 디자인<span>#Photoshop</span></button>
+                        <div id="pro3" class="procon">
+                            <div class="proimg mouse">
+                                <img src="images/pro6.jpg" alt="pro6">
+                                <div class="detail">
+                                    <div class="decon">
+                                        <h2>기한</h2>
+                                        <p>2024.02.27 - 2024.02.27</p>
+                                    </div>
+                                    <div class="decon">
+                                        <h2>담당 역할</h2>
+                                        <p>디자인</p>
+                                    </div>
+                                    <div class="decon">
+                                        <h2>기여도</h2>
+                                        <p>100%</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="probtn2 mouse modalopen">More →</button>
+                        </div>
+                    </li>
+                    <li>
+                        <button class="probtn mouse modalopen2">하늘정원 로고 디자인<span>#Illustrator #Photoshop</span></button>
+                        <div id="pro7" class="procon">
+                            <div class="proimg mouse">
+                                <img src="images/pro7.jpg" alt="pro7">
+                                <div class="detail">
+                                    <div class="decon">
+                                        <h2>기한</h2>
+                                        <p>2024.02.28 - 2024.02.29</p>
+                                    </div>
+                                    <div class="decon">
+                                        <h2>담당 역할</h2>
+                                        <p>디자인</p>
+                                    </div>
+                                    <div class="decon">
+                                        <h2>기여도</h2>
+                                        <p>100%</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="probtn2 mouse modalopen2">More →</button>
+                        </div>
+                    </li>
+                </ul>
+
+                <div class="provd">
+                    <video src="images/pro2vd.mp4" autoplay muted loop></video>
+                </div>
+            </div>
+            <!-- projects2 end -->
+
+            <!-- contect start -->
+            <div class="con" id="contect">
+                <div class="title" data-aos="fade-up"
+                data-aos-duration="2000">
+                    <span>Contect</span>
+                </div>
+
+                <div class="conwrap">
+                    <form class="gform" method="POST" data-email="mheezin@gmail.com"
+                    action="https://script.google.com/macros/s/AKfycbwBvvXL_j75f0R98HcSVZ7BTedBNU7DRhMO_ydZ4gMfcqbmVKrkIV-PKR8TJecx2cU/exec">
+
+                    <div class="formcon" data-aos="fade-up"
+                    data-aos-duration="2000">
+                        <div class="formcon2">
+                            <fieldset class="formgroup">
+                                <label for="Name">Name</label>
+                                <input class="mouse" id="name" name="name" placeholder="Write down your name" required>
+                            </fieldset>
+
+                            <fieldset class="formgroup">
+                                <label for="E-mail">E-mail</label>
+                                <input class="mouse" id="email" name="email" type="email" value required
+                                    placeholder="example@email.com">
+                            </fieldset>
+                        </div>
+
+                        <fieldset class="formgroup">
+                            <label for="message">Message</label>
+                            <textarea class="mouse" name="message" id="message" rows="15" placeholder="Type your message here"
+                                required></textarea>
+                        </fieldset>
+
+                        <button class="contectbtn mouse">Send</button>
+                    </div>
+
+                </form>
+
+                <div class="conaside">
+                    <div class="conasideimg">
+                        <video class="convd" src="images/convd.mp4" autoplay loop muted></video>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <!-- contect end -->
+        </section>
+
+        <footer>
+            <div class="copy">
+                <span>HEEJIN ⓒ 2024 PORTFOLIO</span>
+            </div>
+        </footer>
+
+        <!-- 배경 동영상, 커서 등 요소 -->
+        <div class="bg">
+            <video class="backvd" src="images/geometry video.mp4" autoplay loop muted></video>
+        </div>
+        <div class="cursor"></div>
+        <div class="modalbg"></div>
+        <div class="modal">
+            <div class="modaltop">
+                <h2>Sea Of Love 앨범아트 디자인</h2>
+                <img src="images/cross-mark.png" alt="닫기" class="close mouse">
+            </div>
+            <div class="modalimg">
+                <img src="images/modal1.jpg" alt="modal1" class="mouse">
+            </div>
+            <div class="modaltext">
+                <span>플라이 투 더 스카이의 노래 Sea Of Love의 앨범아트 디자인.</span>
+                <br>
+                <span>가사 중 등장하는 달, 바다에 초점을 두고 작업하였으며, 레트로한 분위기를 표현함.</span>
+            </div>
+        </div>
+
+        <div class="modal2">
+            <div class="modaltop">
+                <h2>하늘정원 로고 디자인</h2>
+                <img src="images/cross-mark.png" alt="닫기" class="close mouse">
+            </div>
+            <div class="modalimg">
+                <img src="images/modal2.jpg" alt="modal1" class="mouse">
+            </div>
+            <div class="modaltext">
+                <span>전남 나주에 위치한 농산물 납품 기업 '하늘정원' 브랜드 로고 디자인</span>
+                <br>
+                <span>신선하고 푸르른 색감, 하늘에 떠 있는 공중정원을 연상케하는 디자인으로 작업함.</span>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
