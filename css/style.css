@@ -460,14 +460,23 @@ header {
 
 /* projects start */
 
-#projects,
-#projects2 {
+#projects{
     width: 1440px;
-    height: 1524px;
+    height: 1500px;
+    margin-bottom: 0;
+    background-color: #010102;
+    z-index: 1;
+    /* overflow: hidden; */
+}
+
+#projects2{
+    width: 1440px;
+    height: 1200px;
     margin-bottom: 0;
     background-color: #010102;
     overflow: hidden;
 }
+
 
 #projects .title,
 #projects2 .title {
