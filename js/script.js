@@ -2,7 +2,28 @@ $(function () {
     // 스크롤 위치 console.log
     // intro - 0 , about - 1123.5 , skills 2247 , 
     var scrollValue = $(document).scrollTop();
-    console.log(scrollValue);
+
+    function saveScrollPosition() {
+        localStorage.setItem('scrollPosition', window.scrollY);
+    }
+    
+    // 페이지를 새로고침-스크롤 저장
+    function reloadAndScroll() {
+        const scrollPosition = localStorage.getItem('scrollPosition');
+        if (scrollPosition !== null) {
+            window.scrollTo(0, parseInt(scrollPosition, 10));
+            localStorage.removeItem('scrollPosition');
+        }
+    }
+    
+    window.onresize = function() {
+        saveScrollPosition();
+        location.reload();
+    };
+    
+    window.onload = function() {
+        reloadAndScroll();
+    };
 
     // 인트로 텍스트 타이핑
     var typed = new Typed('.pr', {
@@ -23,7 +44,7 @@ $(function () {
         $cursor.style.top = e.clientY + 'px';
     });
 
-    $(".mouse").on("mouseover", function(){
+    $(".mouse").on("mouseover", function () {
         $(".cursor").css({
             "position": "fixed",
             "width": "30px",
@@ -38,7 +59,7 @@ $(function () {
         });
     });
 
-    $(".mouse").on("mouseout", function(){
+    $(".mouse").on("mouseout", function () {
         $(".cursor").css({
             "position": "fixed",
             "width": "30px",
@@ -66,7 +87,7 @@ $(function () {
             $(".main a").css("color", "#010102");
             $(".main").removeClass("white");
         }
-        else if (scroll >= 3000, scroll < 9750) {
+        else if (scroll >= 3000, scroll < 7900) {
             $(".logo").html('<a href="#"><img src="images/logo.svg" alt="logo1"></a>');
             $(".main a").css("color", "#f5f7f8");
             $(".main").addClass("white");
@@ -185,82 +206,91 @@ $(function () {
 
     // 아코디언 메뉴 및 projects 풀페이지 스크롤
 
-    $('#projects ul li').each(function () {
-        var project = $(this);
-        var procon = project.find('.procon');
+    function createScrollTriggers() {
+        $('#projects ul li').each(function () {
+            var project = $(this);
+            var procon = project.find('.procon');
+
+            ScrollTrigger.create({
+                trigger: project,
+                start: "top+=600 center",
+                end: "bottom center",
+                onEnter: function () {
+                    gsap.to(procon, { marginTop: -600, duration: 1.5 });
+                },
+                onLeaveBack: function () {
+                    gsap.to(procon, { marginTop: -60, duration: 1.5 });
+                },
+            });
+        });
 
         ScrollTrigger.create({
-            trigger: project,
-            start: "top+=600 center",
-            end: "bottom center",
-            onEnter: function () {
-                gsap.to(procon, { marginTop: -600, duration: 1 });
-            },
-            onLeaveBack: function () {
-                gsap.to(procon, { marginTop: -60, duration: 1 });
-            },
+            trigger: "#projects",
+            start: "top top",
+            end: "+=1100",
+            pin: true,
+            // pinSpacing: true,
         });
-    });
 
-    ScrollTrigger.create({
-        trigger: "#projects",
-        start: "top top",
-        end: "+=2200",
-        pin: true,
-        pinSpacing: true
-    });
+        $('#projects2 ul li').each(function () {
+            var project2 = $(this);
+            var procon2 = project2.find('.procon');
 
-    $('#projects2 ul li').each(function () {
-        var project2 = $(this);
-        var procon2 = project2.find('.procon');
+            ScrollTrigger.create({
+                trigger: project2,
+                start: "top+=600 center",
+                end: "bottom center",
+                onEnter: function () {
+                    gsap.to(procon2, { marginTop: -600, duration: 1.5 });
+                },
+                onLeaveBack: function () {
+                    gsap.to(procon2, { marginTop: -60, duration: 1.5 });
+                },
+            });
+        });
 
         ScrollTrigger.create({
-            trigger: project2,
-            start: "top+=600 center",
-            end: "bottom center",
-            onEnter: function () {
-                gsap.to(procon2, { marginTop: -600, duration: 1 });
-            },
-            onLeaveBack: function () {
-                gsap.to(procon2, { marginTop: -60, duration: 1 });
-            },
+            trigger: "#projects2",
+            start: "top top",
+            end: "+=1100",
+            pin: true,
+            // pinSpacing: true
         });
-    });
+    }
 
-    ScrollTrigger.create({
-        trigger: "#projects2",
-        start: "top top",
-        end: "+=1500",
-        pin: true,
-        pinSpacing: true
+    createScrollTriggers();
+
+    // 새로 고침
+    $(window).on('resize', function() {
+        ScrollTrigger.refresh();
     });
 
     // 모달
-    $(".modalopen").click(function(){
+    $(".modalopen").click(function () {
         $(".modal").fadeIn(500);
         $(".modalbg").fadeIn(500);
     });
-    $(".modal .close").click(function(){
+    $(".modal .close").click(function () {
         $(".modal").hide();
         $(".modalbg").hide();
     });
-    
-    $(".modalopen2").click(function(){
+
+    $(".modalopen2").click(function () {
         $(".modal2").fadeIn(500);
         $(".modalbg").fadeIn(500);
     });
-    $(".modal2 .close").click(function(){
+    $(".modal2 .close").click(function () {
         $(".modal2").hide();
         $(".modalbg").hide();
     });
 
 
-    $(".modalimg").on('mouseenter', function(){
+    $(".modalimg").on('mouseenter', function () {
         const rect = this.getBoundingClientRect();
         const imgwidth = rect.width;
         const imgheight = rect.height;
 
-        $(this).off('mousemove').on('mousemove', function(e){
+        $(this).off('mousemove').on('mousemove', function (e) {
             const xPos = (e.clientX - rect.left) / imgwidth * 100;
             const yPos = (e.clientY - rect.top) / imgheight * 100;
 
