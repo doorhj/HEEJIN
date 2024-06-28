@@ -254,7 +254,7 @@ $(function () {
             start: "top top",
             end: "+=1100",
             pin: true,
-            // pinSpacing: true
+            pinSpacing: true
         });
     }
 
