@@ -227,9 +227,9 @@ $(function () {
         ScrollTrigger.create({
             trigger: "#projects",
             start: "top top",
-            end: "+=1100",
+            end: "+=1300",
             pin: true,
-            // pinSpacing: true,
+            pinSpacing: true,
         });
 
         $('#projects2 ul li').each(function () {
